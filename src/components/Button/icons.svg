@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 24 24" id="dls-icon-arrow-diagonal">
+        <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h24v24H0z" />
+            <path fill="currentColor" d="M10.918 4.06V5.6h6.408L3.532 19.406l1.086 1.11L18.46 6.663v6.402h1.498V4.06z" />
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="dls-icon-arrow-down">
+        <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h24v24H0z" />
+            <path fill="currentColor" d="M18.38 14.608l-1.09-1.09-4.53 4.531-.002-15.031L11.204 3l.003 15.1-4.527-4.526-1.06 1.06L11.987 21z" />
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="dls-icon-arrow-left">
+        <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h24v24H0z" />
+            <path fill="currentColor" d="M9.392 18.38l1.09-1.09-4.531-4.53 15.031-.002.018-1.554-15.1.003 4.526-4.527-1.06-1.06L3 11.987z" />
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="dls-icon-arrow-right">
+        <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h24v24H0z" />
+            <path fill="currentColor" d="M14.608 5.62l-1.09 1.09 4.531 4.53-15.031.002L3 12.796l15.1-.003-4.526 4.527 1.06 1.06L21 12.013z" />
+        </g>
+    </symbol>
+</svg>

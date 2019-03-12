@@ -1,0 +1,28 @@
+{
+  "name": "take-home-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "concurrently --names 'WEB,API' -c 'bgBlue.bold,bgMagenta.bold' 'npm:dev-server' 'npm:api-proxy'",
+    "dev-server": "react-scripts start",
+    "api-proxy": "lcp --proxyUrl http://v0.postcodeapi.com.au"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "local-cors-proxy": "^1.0.2"
+  }
+}
