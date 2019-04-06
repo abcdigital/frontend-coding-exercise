@@ -6,7 +6,7 @@ Implement an auto-complete field that uses suburb information from postcodeapi.c
 
 ## Scope
 
-This exercise is intended to explore you understanding of HTML, CSS and JavaScript. The provided React structure is provided as a starting point, you are encouraged to change or remove it as you see fit.
+This exercise is intended to explore your understanding of HTML, CSS and JavaScript. The provided React structure is intended as a starting point, you are encouraged to change or remove it as you see fit.
 
 You do not have to complete all the requirements, but we encourage you to make an attempt at addressing all three areas, rather than submitting a fully fleshed-out solution to just one. You may use ARCHITECTURE.md to detail any solutions that would take too long to implement in code.
 
