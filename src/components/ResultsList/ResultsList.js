@@ -12,7 +12,7 @@ import "./ResultsList.css";
  * @prop {Function} onSelect Callback to execute when item is selected, accepts object.
  * @prop {mixed} ... All other props will be forwarded to the container DOM node.
  */
-export default function ResultsList(props) {
+export function ResultsList(props) {
   const { className, onSelect, items, ...otherProps } = props;
 
   return (

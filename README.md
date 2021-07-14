@@ -2,7 +2,7 @@
 
 ## Summary
 
-Implement an auto-complete field that uses suburb information from postcodeapi.com.au to suggest suburb names and allow the user to make a suggestion. This design is similar to the input seen on https://iview.abc.net.au or https://google.com.
+Implement an auto-complete field that uses suburb information from postcodeapi.com.au to suggest suburb names and allow the user to make a suggestion. This design is similar to the input seen on https://google.com or the [ABC homepage](www.abc.net.au) location selector component.
 
 ## Scope
 
@@ -14,7 +14,7 @@ You do not have to complete all the requirements, but we encourage you to make a
 
 1\. Layout and CSS:
 
-- Use the provided \<Input />, \<Button /> and \<ResultsList /> as well as your own markup and CSS to render a layout similar to the image below.
+- Use the provided `<Input />`, `<Button />` and `<ResultsList />` as well as your own markup and CSS to render a layout similar to the image below.
 - The label, input and button should be horizontally aligned.
 - The results should be displayed immediately below the input.
 
@@ -39,7 +39,7 @@ You do not have to complete all the requirements, but we encourage you to make a
 git clone https://github.com/abcaustralia/frontend-coding-exercise.git
 cd frontend-coding-exercise
 npm install
-npm run start
+npm start
 ```
 
-This project uses data provided by postcodeapi.com.au. Due to CORS limitations `npm run start` will start a local proxy server on http://localhost:8010/proxy.
+This project uses data provided by postcodeapi.com.au. Due to CORS limitations `npm start` will start a local proxy server on http://localhost:8010/proxy.

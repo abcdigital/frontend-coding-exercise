@@ -1,11 +1,11 @@
 {
   "name": "take-home-assignment",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "concurrently --names 'WEB,API' -c 'bgBlue.bold,bgMagenta.bold' 'npm:dev-server' 'npm:api-proxy'",
@@ -22,7 +22,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "local-cors-proxy": "^1.0.2"
+    "concurrently": "^6.2.0",
+    "local-cors-proxy": "^1.1.0"
   }
 }
