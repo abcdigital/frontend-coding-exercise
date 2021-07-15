@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./Input.css";
 
 /**
@@ -14,37 +14,28 @@ import "./Input.css";
  * @prop {Function} onChange Callback that will receive current input value.
  * @prop {mixed} ... All other props will be forwarded to the native DOM input.
  */
-export default class Input extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: props.value || ""
-    };
+export function Input(props) {
+  const { className, value, onChange, ...otherProps } = props;
+
+  const [inputValue, setInputValue] = useState(value);
+
+  // Keep the current value, unless the parent component supplies a different "value" prop.
+  useEffect(() => {
+    setInputValue(value);
+  }, [value]);
+
+  function handleChange(event) {
+    setInputValue(event.target.value);
+    onChange && onChange(event.target.value);
   }
 
-  componentWillReceiveProps(nextProps) {
-    // Keep the current value, unless the parent component supplies a different "value" prop.
-    if (nextProps.value !== this.props.value) {
-      this.setState({ value: nextProps.value });
-    }
-  }
-
-  onChange(value) {
-    this.setState({ value: value });
-    this.props.onChange && this.props.onChange(value);
-  }
-
-  render() {
-    const { className, value, onChange, ...otherProps } = this.props;
-
-    return (
-      <input
-        className={"Input " + (className || "")}
-        type="text"
-        value={this.state.value}
-        onChange={event => this.onChange(event.target.value)}
-        {...otherProps}
-      />
-    );
-  }
+  return (
+    <input
+      className={"Input " + (className || "")}
+      type="text"
+      value={inputValue}
+      onChange={handleChange}
+      {...otherProps}
+    />
+  );
 }
