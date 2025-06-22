@@ -45,3 +45,8 @@ npm start
 ```
 
 This project uses data provided by postcodeapi.com.au. Due to CORS limitations `npm start` will start a local proxy server on http://localhost:8010/proxy.
+
+When submitting the coding exercise we ask that you:
+
+- Include the `.git` directory, so we can track your changes.
+- **Do not** include the `node_modules` directory in your archive.
